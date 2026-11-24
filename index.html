@@ -451,6 +451,60 @@ nav .nav-in{height:124px;padding-top:30px}
 #begin .pic{max-height:min(460px,52svh)}
 #begin .sect-logo{max-height:110px;margin-top:20px}
 @media (max-width:900px){#begin{padding-top:120px;padding-bottom:14px}#begin .pic{max-height:30svh}#begin .sect-logo{max-height:64px;margin-top:10px}.closing .disc{font-size:11px;margin-top:10px}}
+
+/* MOBILE v3: same layout as desktop, scaled */
+@media (max-width:900px){
+ /* hero: card visible on first screen */
+ .hero-grid{display:flex!important;flex-direction:column;gap:14px!important;min-height:0!important}
+ .hero-grid>div:not(.hero-mid):not(#objective){display:contents}
+ .hero-mid{display:none!important}
+ .hero .overline{order:1;margin:0!important}
+ .hero h1{order:2;font-size:clamp(28px,7.4vw,44px);margin:0!important}
+ .hero .intro.first{order:3;margin:2px 0 0!important;font-size:clamp(14px,3.4vw,18px)}
+ .hero .btns{order:4;flex-direction:row!important;gap:8px!important;width:100%;margin:2px 0 0!important}
+ .hero .btns .btn{width:auto!important;flex:1 1 0;padding:0 8px!important;font-size:10px!important;white-space:nowrap}
+ .hero #objective{order:5;margin-top:4px}
+ .hero .intro:not(.first){order:6;margin:2px 0 0!important;font-size:clamp(13px,3.2vw,16px)}
+ .hero #objective .panel-label{padding:12px 16px}
+ .hero #objective .row{grid-template-columns:44px 1fr;padding:14px 16px}
+ .hero #objective .row strong{font-size:20px}
+ .hero #objective .row b{font-size:15px;margin-bottom:3px}
+ .hero #objective .row span{font-size:12.5px;line-height:1.38}
+ /* sticky left, scrolling right, kept on every phone */
+ .sx{grid-template-columns:minmax(0,38%) minmax(0,1fr)!important;gap:16px!important;align-items:start}
+ .sx .sl{position:sticky!important;top:112px;align-self:start}
+ .sx .sl h2{font-size:clamp(15px,4.3vw,26px)!important;line-height:1.08}
+ .sx .sl .num{font-size:7.5px;letter-spacing:.06em;margin-bottom:8px}
+ .sx .sl .lead{font-size:clamp(11px,2.7vw,15px);line-height:1.38;margin-top:10px}
+ .sx .sl .signature{font-size:15px;margin-top:12px}
+ .sx .sl .btns{margin-top:14px}
+ .sx .sl .btn{font-size:9px;padding:0 10px}
+ .sx .sl .disc{font-size:9px;margin-top:10px}
+ .sx .sr{min-width:0}
+ .sx .sr .pic{max-width:100%!important;width:100%;margin:0 0 18px;aspect-ratio:4/5}
+ .sx .sr .pic img{object-position:50% 8%!important}
+ .sx .sr p,.sx .sr li{font-size:clamp(12px,3vw,16px);line-height:1.45}
+ .sx .sr h3{font-size:clamp(15px,3.8vw,22px)}
+ .sx .sr .pillars,.sx .sr .trio,.sx .sr .fit,.sx .sr .invest,.sx .sr .proof{gap:10px;margin-top:14px}
+ .sx .sr .phase{padding:24px 0}
+ .sx .sr .phase h3{font-size:clamp(18px,4.6vw,28px)}
+ .sx .sr .feature{padding:12px;gap:12px;margin-top:24px}
+ .sx .sr .feature h3{font-size:clamp(18px,4.6vw,26px)}
+ .sx .sr .signature{font-size:clamp(16px,4.2vw,24px);margin-top:26px}
+ .sx .sr .price{padding:18px 14px}
+ .sx .sr .price strong{font-size:clamp(32px,8vw,48px)}
+ .sx .sr .pbody{padding:14px}
+ .sx .sr .scard h3{font-size:clamp(15px,3.8vw,22px)}
+ .sx-gap{height:40px!important}
+ .sx .sr .btns{flex-direction:column}
+ /* journey: 7 photos in one row */
+ .journey ol{flex-wrap:nowrap!important;gap:5px!important;justify-content:space-between;overflow:visible!important;padding:0!important;margin:22px 0 0!important}
+ .journey li{flex:1 1 0!important;min-width:0}
+ .journey b{font-size:clamp(5.5px,1.5vw,9px)!important;letter-spacing:0!important;margin-top:6px!important;word-break:break-word}
+ .journey .jd{font-size:clamp(5.5px,1.4vw,9px)!important;line-height:1.25!important;word-break:break-word}
+}
+@media (max-width:900px){.sx .sr .triple p,.sx .sr p.big,.sx .sr .big,.sx .sr .lead{font-size:clamp(14px,3.8vw,22px)!important;line-height:1.35}.sx .sr .pcard .pbody,.sx .sr .pill-card{padding:12px}}
+@media (max-width:900px){.pc{grid-template-columns:72px minmax(0,1fr)!important}.pc img{width:72px!important}.pc .pcb{padding:12px!important;min-width:0}.pc .res{font-size:clamp(15px,4vw,20px)!important}.pc .nm{font-size:8px!important;letter-spacing:.06em!important}.pc .dt{font-size:11px!important;word-break:break-word}}
 </style>
 </head>
 <body>
