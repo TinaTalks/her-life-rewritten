@@ -454,22 +454,6 @@ nav .nav-in{height:124px;padding-top:30px}
 
 /* MOBILE v3: same layout as desktop, scaled */
 @media (max-width:900px){
- /* hero: card visible on first screen */
- .hero-grid{display:flex!important;flex-direction:column;gap:14px!important;min-height:0!important}
- .hero-grid>div:not(.hero-mid):not(#objective){display:contents}
- .hero-mid{display:none!important}
- .hero .overline{order:1;margin:0!important}
- .hero h1{order:2;font-size:clamp(28px,7.4vw,44px);margin:0!important}
- .hero .intro.first{order:3;margin:2px 0 0!important;font-size:clamp(14px,3.4vw,18px)}
- .hero .btns{order:4;flex-direction:row!important;gap:8px!important;width:100%;margin:2px 0 0!important}
- .hero .btns .btn{width:auto!important;flex:1 1 0;padding:0 8px!important;font-size:10px!important;white-space:nowrap}
- .hero #objective{order:5;margin-top:4px}
- .hero .intro:not(.first){order:6;margin:2px 0 0!important;font-size:clamp(13px,3.2vw,16px)}
- .hero #objective .panel-label{padding:12px 16px}
- .hero #objective .row{grid-template-columns:44px 1fr;padding:14px 16px}
- .hero #objective .row strong{font-size:20px}
- .hero #objective .row b{font-size:15px;margin-bottom:3px}
- .hero #objective .row span{font-size:12.5px;line-height:1.38}
  /* sticky left, scrolling right, kept on every phone */
  .sx{grid-template-columns:minmax(0,38%) minmax(0,1fr)!important;gap:16px!important;align-items:start}
  .sx .sl{position:sticky!important;top:112px;align-self:start}
@@ -505,6 +489,12 @@ nav .nav-in{height:124px;padding-top:30px}
 }
 @media (max-width:900px){.sx .sr .triple p,.sx .sr p.big,.sx .sr .big,.sx .sr .lead{font-size:clamp(14px,3.8vw,22px)!important;line-height:1.35}.sx .sr .pcard .pbody,.sx .sr .pill-card{padding:12px}}
 @media (max-width:900px){.pc{grid-template-columns:72px minmax(0,1fr)!important}.pc img{width:72px!important}.pc .pcb{padding:12px!important;min-width:0}.pc .res{font-size:clamp(15px,4vw,20px)!important}.pc .nm{font-size:8px!important;letter-spacing:.06em!important}.pc .dt{font-size:11px!important;word-break:break-word}}
+@media (max-width:900px){
+ .hero-bg{height:100%!important;bottom:0!important}
+ .hero-bg img{opacity:.3!important;object-position:50% 8%!important}
+ .hero-bg::after{background:linear-gradient(180deg,rgba(11,11,12,.25) 0,rgba(11,11,12,.55) 55%,var(--bg) 100%)!important}
+ .hero-grid{gap:28px!important}
+}
 </style>
 </head>
 <body>
